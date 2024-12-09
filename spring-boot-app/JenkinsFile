@@ -6,17 +6,17 @@ pipeline {
     }
   }
   stages {
-    stage('Cleanup') {
-      steps {
-        cleanWs() // Clean the workspace
-      }
-    }
-    stage('Checkout') {
-      steps {
-        sh 'echo passed'
-        // git branch: 'main', url: 'https://github.com/ashishthakur55525/springboot-app.git'
-      }
-    }
+    // stage('Cleanup') {
+    //   steps {
+    //     cleanWs() // Clean the workspace
+    //   }
+    // }
+    // stage('Checkout') {
+    //   steps {
+    //     sh 'echo passed'
+    //     // git branch: 'main', url: 'https://github.com/ashishthakur55525/springboot-app.git'
+    //   }
+    // }
     stage('Build and Test') {
       steps {
         sh 'ls -ltr'
