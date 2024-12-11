@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-initdb-config
+data:
+  initdb.sql: |
+    CREATE DATABASE football;
+    CREATE TABLE `squadra` (
+        `name` varchar(15) PRIMARY KEY NOT NULL
+    );
+    USE football;
+    ...
