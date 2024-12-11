@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/ashishthakur55525/springboot-app.git
     targetRevision: HEAD
-    path: mysql-manifests
+    path: mysql-manifests/memsql
   destination: 
     server: https://kubernetes.default.svc
     namespace: mysql
