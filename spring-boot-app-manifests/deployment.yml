@@ -19,7 +19,7 @@ spec:
         image: thakurashish55525/sample-app-springboot:20
         resources:
           requests:
-            memory: "90Mi"
+            memory: "80Mi"
         ports:
         - containerPort: 8080
       volumes:
