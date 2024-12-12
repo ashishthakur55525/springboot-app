@@ -22,6 +22,9 @@ spec:
             memory: "80Mi"
         ports:
         - containerPort: 8080
+        volumeMounts:
+          - name: springboot-app
+            mountPath: /opt/app
       volumes:
       - name: conf
         emptyDir: {}
