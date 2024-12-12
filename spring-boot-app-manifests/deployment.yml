@@ -17,6 +17,9 @@ spec:
       containers:
       - name: spring-boot-app
         image: thakurashish55525/sample-app-springboot:20
+        resources:
+          requests:
+            memory: "100Mi"
         ports:
         - containerPort: 8080
       volumes:
