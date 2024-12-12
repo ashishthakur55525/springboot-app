@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: springboot-app-cm
+data:
+  initdb.sql: |
+    CREATE DATABASE football;
+    CREATE TABLE `squad` (
+        `name` varchar(15) PRIMARY KEY NOT NULL
+    );
+    USE football;
+    ...

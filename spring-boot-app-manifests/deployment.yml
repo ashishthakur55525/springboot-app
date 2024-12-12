@@ -19,3 +19,9 @@ spec:
         image: thakurashish55525/sample-app-springboot:12
         ports:
         - containerPort: 8080
+      volumes:
+      - name: conf
+        emptyDir: {}
+      - name: springboot-app
+        configMap:
+          name: springboot-app-cm
