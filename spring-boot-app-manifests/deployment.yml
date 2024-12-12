@@ -24,7 +24,7 @@ spec:
         - containerPort: 8080
         volumeMounts:
           - name: springboot-app
-            mountPath: /opt/app
+            mountPath: /etc/springboot
       volumes:
       - name: conf
         emptyDir: {}
