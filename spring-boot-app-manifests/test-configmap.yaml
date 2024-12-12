@@ -7,7 +7,7 @@ commonAnnotations:
 data:
   initdb.sql: |
     CREATE DATABASE football;
-    CREATE TABLE `squadeeeeeeeee` (
+    CREATE TABLE `sq` (
         `name` varchar(15) PRIMARY KEY NOT NULL
     );
     USE football;
