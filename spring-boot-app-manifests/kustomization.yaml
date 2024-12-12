@@ -5,6 +5,7 @@ namespace: operators
 resources:
 - deployment.yml
 - test-configmap.yaml
+- service.yml
 
 commonAnnotations:
   sample-version: v1

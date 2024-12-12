@@ -11,3 +11,6 @@ spec:
     protocol: TCP
   selector:
     app: spring-boot-app
+
+commonAnnotations:
+  sample-version: v1
