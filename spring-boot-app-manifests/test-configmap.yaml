@@ -3,11 +3,11 @@ kind: ConfigMap
 metadata:
   name: springboot-app-cm
 commonAnnotations:
-  sample-version: v1
+  sample-version: v2
 data:
   initdb.sql: |
     CREATE DATABASE football;
-    CREATE TABLE `sq` (
+    CREATE TABLE `squuueueueueueu` (
         `name` varchar(15) PRIMARY KEY NOT NULL
     );
     USE football;
