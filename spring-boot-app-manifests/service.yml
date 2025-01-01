@@ -13,4 +13,4 @@ spec:
     app: spring-boot-app
 
 commonAnnotations:
-  sample-version: v2
+  sample-version: v3

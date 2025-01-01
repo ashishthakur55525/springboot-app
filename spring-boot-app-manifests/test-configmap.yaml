@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: springboot-app-cm
 commonAnnotations:
-  sample-version: v2
+  sample-version: v3
 data:
   initdb.sql: |
     CREATE DATABASE football;
