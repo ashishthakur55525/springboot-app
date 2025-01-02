@@ -46,7 +46,7 @@ spec:
         name: mysql-store
       spec:
         accessModes: ["ReadWriteOnce"]
-        storageClassName: "mysql"
+        storageClassName: "local-storage"
         resources:
           requests:
             storage: 6Gi
