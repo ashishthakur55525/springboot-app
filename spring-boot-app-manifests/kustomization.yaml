@@ -8,4 +8,4 @@ resources:
 - service.yml
 
 commonAnnotations:
-  sample-version: v4
+  sample-version: v5
