@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: spring-boot-app-service
   annotations: 
-    sample-version: v2
+    sample-version: v3
 spec:
   type: NodePort
   ports:
