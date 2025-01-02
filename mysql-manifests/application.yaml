@@ -4,6 +4,10 @@ metadata:
   name: mysql
   namespace: operators
 spec:
+  ignoreDifferences:  #related to PVC
+  - jsonPointers:     #related to PVC
+    - /spec/volumeName  #related to PVC
+    kind: PersistentVolumeClaim  #related to PVC
   project: default
   source:
     repoURL: https://github.com/ashishthakur55525/springboot-app.git
@@ -18,6 +22,7 @@ spec:
         argocd.argoproj.io/managed-by: operators
     syncOptions:
     - CreateNamespace=true
+    - RespectIgnoreDifferences=true   #related to PVC
     automated:
       selfHeal: true
       prune: true
