@@ -1,28 +1,28 @@
+# # apiVersion: v1
+# # kind: PersistentVolume
+# # metadata:
+# #   name: pv-volume
+# # spec:
+# #   storageClassName: local-storage
+# #   accessModes:
+# #     - ReadWriteOnce
+# #   capacity:
+# #     storage: 5Gi
+# #   hostPath:
+# #     path: /data/mysql_data/
+
 # apiVersion: v1
 # kind: PersistentVolume
 # metadata:
 #   name: pv-volume
 # spec:
-#   storageClassName: local-storage
 #   accessModes:
-#     - ReadWriteOnce
+#   - ReadWriteOnce
 #   capacity:
 #     storage: 5Gi
 #   hostPath:
 #     path: /data/mysql_data/
-
-apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: pv-volume
-spec:
-  accessModes:
-  - ReadWriteOnce
-  capacity:
-    storage: 5Gi
-  hostPath:
-    path: /data/mysql_data/
-    type: ""
-  persistentVolumeReclaimPolicy: Retain
-  storageClassName: local-storage
-  volumeMode: Filesystem
+#     type: ""
+#   persistentVolumeReclaimPolicy: Retain
+#   storageClassName: local-storage
+#   volumeMode: Filesystem
