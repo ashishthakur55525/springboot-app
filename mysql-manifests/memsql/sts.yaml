@@ -21,7 +21,7 @@ spec:
             - containerPort: 3306
           resources:
             requests:
-              memory: "300Mi"    # Minimum memory requested
+              memory: "350Mi"    # Minimum memory requested
               cpu: "500m"        # Minimum CPU requested
             limits:
               memory: "512Mi"    # Maximum memory allowed
