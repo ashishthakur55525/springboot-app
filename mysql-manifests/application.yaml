@@ -6,7 +6,7 @@ metadata:
 spec:
   ignoreDifferences:  #related to PVC
   - jsonPointers:     #related to PVC
-    - /spec/volumeName  #related to PVC
+    - /spec/pv-volume  #related to PVC
     kind: PersistentVolumeClaim  #related to PVC
   project: default
   source:
