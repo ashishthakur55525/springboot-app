@@ -5,7 +5,7 @@ metadata:
 data:
   initdb.sql: |
     CREATE DATABASE football;
-    CREATE TABLE `testme1234` (
+    CREATE TABLE `12345test` (
         `name` varchar(15) PRIMARY KEY NOT NULL
     );
     USE football;
