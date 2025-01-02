@@ -2,8 +2,8 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: springboot-app-cm
-# commonAnnotations:
-#   sample-version: v3
+  annotations: 
+    sample-version: v2
 data:
   initdb.sql: |
     CREATE DATABASE football;

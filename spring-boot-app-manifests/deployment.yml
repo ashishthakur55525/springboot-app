@@ -4,8 +4,8 @@ metadata:
   name: spring-boot-app
   labels:
     app: spring-boot-app
-# commonAnnotations:
-#   sample-version: v3
+  annotations: 
+    sample-version: v2
 spec:
   replicas: 1
   selector:

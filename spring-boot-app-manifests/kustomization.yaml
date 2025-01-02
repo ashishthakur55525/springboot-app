@@ -7,5 +7,5 @@ resources:
 - test-configmap.yaml
 - service.yml
 
-# commonAnnotations:
-#   sample-version: v1
+commonAnnotations:
+  sample-version: v2
