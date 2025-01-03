@@ -19,8 +19,8 @@ spec:
         image: thakurashish55525/sample-app-springboot:20
         resources:
           requests:
-            memory: "256Mi"    # Minimum memory requested
-            cpu: "500m"        # Minimum CPU requested
+          memory: "256Mi"    # Minimum memory requested
+          cpu: "500m"        # Minimum CPU requested
           limits:
             memory: "512Mi"    # Maximum memory allowed
             cpu: "1"           # Maximum CPU allowed
