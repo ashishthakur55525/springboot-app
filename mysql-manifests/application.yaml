@@ -16,13 +16,13 @@ spec:
   destination: 
     server: https://kubernetes.default.svc
     namespace: mysql
-  # syncPolicy:
-  #   managedNamespaceMetadata:
-  #     labels:
-  #       argocd.argoproj.io/managed-by: operators
-  #   syncOptions:
-  #   - CreateNamespace=true
-  #   - RespectIgnoreDifferences=true   #related to PVC
-  #   automated:
-  #     selfHeal: true
-  #     prune: true
+  syncPolicy:
+    managedNamespaceMetadata:
+      labels:
+        argocd.argoproj.io/managed-by: operators
+    syncOptions:
+    - CreateNamespace=true
+    - RespectIgnoreDifferences=true   #related to PVC
+    automated:
+      selfHeal: true
+      prune: true
