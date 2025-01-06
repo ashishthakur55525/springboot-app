@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: thakurashish55525/sample-app-springboot:3
+        image: thakurashish55525/sample-app-springboot:replaceImageTag
         resources:
           requests:
             memory: "300Mi"    # Minimum memory requested
