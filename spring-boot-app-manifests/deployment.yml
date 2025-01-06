@@ -19,10 +19,10 @@ spec:
         image: thakurashish55525/sample-app-springboot:20
         resources:
           requests:
-            memory: "200Mi"    # Minimum memory requested
+            memory: "300Mi"    # Minimum memory requested
             cpu: "200m"        # Minimum CPU requested
           limits:
-            memory: "200Mi"    # Maximum memory allowed
+            memory: "300Mi"    # Maximum memory allowed
             cpu: "200m"           # Maximum CPU allowed
         ports:
         - containerPort: 8080
