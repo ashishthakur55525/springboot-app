@@ -17,6 +17,13 @@ pipeline {
     //     // git branch: 'main', url: 'https://github.com/ashishthakur55525/springboot-app.git'
     //   }
     // }
+    stage('Cleanup Workspace') {
+      steps {
+        sh 'sudo su -'
+        sh 'cd /var/lib/jenkins'
+        sh 'rm -rf *'
+      }
+    }
     stage('Build and Test') {
       steps {
         sh 'ls -ltr'
